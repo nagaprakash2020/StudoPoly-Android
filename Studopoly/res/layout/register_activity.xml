@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+ 
+        <!--  Header  Starts-->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/header"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+                <!-- Logo Start-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:contentDescription="@string/studypoly_logo_name"
+                    android:src="@drawable/ic_launcher" />
+
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        
+         <!-- Login Form -->
+        
+
+       <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="10dip" >
+          
+            <!-- First Name -->
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_given" />
+
+            <EditText
+                android:id="@+id/first_name_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_name"
+                android:inputType="textPersonName" />
+            
+            <!-- Last Name -->
+            
+            <!-- College Name -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name" />
+
+            <EditText
+                android:id="@+id/last_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/example_last_name"
+                android:inputType="textPersonName" />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/College_Name" />
+            
+            <!-- Fau User Id -->
+
+            <Spinner
+                android:id="@+id/school_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/school_name"
+                android:prompt="@string/select_school_prompt" />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name" />
+
+            <EditText
+                android:id="@+id/user_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_username"
+                android:inputType="textPersonName" />
+            
+            <!-- Email -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/phonenumber_register"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/phone_example" >
+
+                <requestFocus />
+            </EditText>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_text" />
+
+            <EditText
+                android:id="@+id/email_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example_email"
+                android:inputType="textEmailAddress" />
+            
+            <!-- Phone -->
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_password" />
+
+            <EditText
+                android:id="@+id/password_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+            
+            <!-- Password -->
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reenter_password" />
+            
+            <EditText
+                android:id="@+id/repassword_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        
+          <!-- Register button -->
+
+          <Button
+              android:id="@+id/btnRegister"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dip"
+              android:text="@string/register_btn_text" />
+
+          <TextView
+              android:id="@+id/register_Result"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="" />
+              
+        </LinearLayout>
+        <!-- Login Form Ends -->
+        <!-- Footer Start -->
+
+        <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:background="@layout/footer"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/main"
+                
+         >
+        </LinearLayout>
+        <!-- Footer Ends -->
+ 
+       
+  </RelativeLayout>
+</ScrollView>
