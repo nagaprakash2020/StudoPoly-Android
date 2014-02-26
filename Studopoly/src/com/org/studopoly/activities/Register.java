@@ -1,4 +1,4 @@
-package com.org.studopoly;
+package com.org.studopoly.activities;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -17,6 +17,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.org.studopoly.R;
+import com.org.studopoly.R.id;
+import com.org.studopoly.R.layout;
 import com.org.studopoly.validations.Validation;
 
 public class Register extends Activity {

@@ -20,8 +20,17 @@ public class VolumeInfo{
    	private Number ratingsCount;
    	private String subtitle;
    	private String title;
+   	private String publisher;
+   	
+   	
 
- 	public List getAuthors(){
+ 	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	public List getAuthors(){
 		return this.authors;
 	}
 	public void setAuthors(List authors){

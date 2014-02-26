@@ -1,10 +1,14 @@
-package com.org.studopoly;
+package com.org.studopoly.activities;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import com.org.studopoly.R;
+import com.org.studopoly.Resources;
+import com.org.studopoly.R.id;
+import com.org.studopoly.R.layout;
 import com.org.studopoly.validations.Validation;
 
 import android.app.Activity;
@@ -196,4 +200,6 @@ public class Login extends Activity
 			}
 		}
 	}
+	
+	
 }

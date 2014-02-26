@@ -14,4 +14,13 @@
         android:layout_marginTop="48dp"
         android:text="@string/sell_your_book_btn" />
 
+    <Button
+        android:id="@+id/MyBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scan_bar_code_btn"
+        android:layout_alignRight="@+id/scan_bar_code_btn"
+        android:layout_below="@+id/scan_bar_code_btn"
+        android:text="@string/my_books" />
+
 </RelativeLayout>

@@ -31,5 +31,22 @@
     <string name="scan_book_btn">Scan BarCode</string>
     <string name="title_activity_sell_book">SellBook</string>
     <string name="title_activity_sell_book_details">SellBookDetails</string>
+    <string name="book_title">Title</string>
+    <string name="book_authors">Authors</string>
+    <string name="book_publisher">Publisher</string>
+    <string name="book_published_date">Published Date</string>
+    <string name="book_description">Description</string>
+    <string name="book_cover_page">Cover Page</string>
+    <string name="title_activity_test">Test</string>
+    <string name="highlighting">Highlighting</string>
+    <string name="torn_pages">Torn Pages</string>
+    <string name="bent_edges">Bent Edges</string>
+    <string name="quality">Quality</string>
+    <string name="price">Price</string>
+    <string name="comments">Comments</string>
+    <string name="list_book">List Book</string>
+    <string name="my_books">MyBooks</string>
+    <string name="title_activity_my_books">MyBooks</string>
+    <string name="title_activity_books_listed">BooksListed</string>
 
 </resources>

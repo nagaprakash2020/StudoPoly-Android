@@ -1,4 +1,4 @@
-package com.org.studopoly.sellbook;
+package com.org.studopoly.activities;
 
 import com.org.studopoly.R;
 import com.org.studopoly.Resources;

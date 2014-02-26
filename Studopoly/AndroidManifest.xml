@@ -9,7 +9,7 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.org.studopoly.Splash"
+            android:name="com.org.studopoly.activities.Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,25 +26,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.org.studopoly.Login"
+            android:name="com.org.studopoly.activities.Login"
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name="com.org.studopoly.Register"
+            android:name="com.org.studopoly.activities.Register"
             android:label="@string/title_activity_register" >
         </activity>
         <activity
-            android:name="com.org.studopoly.HomeScreen"
+            android:name="com.org.studopoly.activities.HomeScreen"
             android:label="@string/title_activity_home_screen" >
         </activity>
         <activity
-            android:name="com.org.studopoly.sellbook.SellBook"
+            android:name="com.org.studopoly.activities.SellBook"
             android:label="@string/title_activity_sell_book" >
         </activity>
         <activity
-            android:name="com.org.studopoly.sellbook.SellBookDetails"
+            android:name="com.org.studopoly.activities.SellBookDetails"
             android:label="@string/title_activity_sell_book_details" >
         </activity>
+        <activity
+            android:name="com.org.studopoly.MyBooks"
+            android:label="@string/title_activity_my_books" >
+        </activity>
+        <activity
+            android:name="com.org.studopoly.activities.BooksListed"
+            android:label="@string/title_activity_books_listed" >
+        </activity>
+        
     </application>
 
 </manifest>

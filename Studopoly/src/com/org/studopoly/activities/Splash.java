@@ -1,4 +1,7 @@
-package com.org.studopoly;
+package com.org.studopoly.activities;
+
+import com.org.studopoly.R;
+import com.org.studopoly.R.layout;
 
 import android.os.Bundle;
 import android.app.Activity;
