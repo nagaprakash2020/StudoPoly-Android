@@ -10,7 +10,7 @@ public class NetworkUtil {
     public static int TYPE_MOBILE = 2;
     public static int TYPE_NOT_CONNECTED = 0;
      
-     
+    //comment from Blagojco
     public static int getConnectivityStatus(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
