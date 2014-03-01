@@ -81,9 +81,9 @@ public class SellBookDetails extends Activity {
 					public void onClick(View v) 
 					{
 						Log.d("ListBook","List Book Button Clicked");
-						book.setSelling_price(Float.parseFloat(price.getText().toString()));
+						book.setSellingPrice(Float.parseFloat(price.getText().toString()));
 						book.setComments(Comments.getText().toString());
-						book.setTorn_pages(torn_pages.isChecked());
+						book.setTornPages(torn_pages.isChecked());
 						book.setHighlighting(highlighiting.isChecked());
 						// Set the quality from seek bar.
 						book.setQuality(2);
@@ -200,17 +200,17 @@ public class SellBookDetails extends Activity {
 					// Rest will be set when user enters details
 				    	
 					book.setTitle(vInfo.getTitle());
-					book.setSubtitle(vInfo.getSubtitle());
+					book.setSubTitle(vInfo.getSubtitle());
 					book.setIsbn(Resources.ISBN);
 					book.setAuthor(author);
 					book.setPublisher(vInfo.getPublisher());
-					book.setPublished_date(vInfo.getPublishedDate());
+					book.setPublishedDate(vInfo.getPublishedDate());
 					book.setDescription(vInfo.getDescription());
-					book.setSelf_link(jArray.getJSONObject(0).getString("selfLink"));
-					book.setPage_count(Integer.parseInt(vInfo.getPageCount().toString()));
-					book.setImage_link1(imageLinks.getSmallThumbnail());
-					book.setImage_link2(imageLinks.getThumbnail());
-					book.setPreview_link(vInfo.getPreviewLink());
+					book.setSelfLink(jArray.getJSONObject(0).getString("selfLink"));
+					book.setPageCount(Integer.parseInt(vInfo.getPageCount().toString()));
+					book.setImageLink1(imageLinks.getSmallThumbnail());
+					book.setImageLink2(imageLinks.getThumbnail());
+					book.setPreviewLink(vInfo.getPreviewLink());
 					
 					
 				    				
@@ -218,7 +218,7 @@ public class SellBookDetails extends Activity {
 				    bookTitle.setText(book.getTitle());
 				    bookAuthors.setText(book.getAuthor());
 				    bookPublisher.setText(book.getPublisher());
-				    bookPublishedDate.setText(book.getPublished_date().toString());
+				    bookPublishedDate.setText(book.getPublishedDate().toString());
 				    
 				    Log.d("Author",author);
 				    Log.d("Book Value","Book details"+gson.toJson(volumeInfo));
